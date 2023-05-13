@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2rem;
+  background-color: hsl(0, 0%, 94%);
+  color: hsl(0, 0%, 8%);
+}
+
+.age-counter {
+  max-width: 60rem;
+  margin: 10rem auto;
+  padding: 3.2rem;
+  border-radius: 12px 12px 120px 12px;
+
+  background-color: #fff;
+}
+
+/* RESULT HANDLING */
+.result-box {
+  font-size: 6.4rem;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.result {
+  color: hsl(259, 100%, 65%);
+}
+
+.divider {
+  position: relative;
+  height: 1px;
+  background-color: hsl(0, 0%, 86%);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.submit--btn {
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  border: none;
+  padding: 1rem;
+}
+
+.submit--btn:hover,
+.submit--btn:active {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 8%);
+}
+
+.submit--btn img {
+  width: 2.6rem;
+  height: auto;
+}
+
+/* BIRTHDAY FORM HANDLING */
+
+.birthday-form {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 2.4rem;
+}
+
+#birth-submit div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+#birth-submit div label {
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+  margin-bottom: 0;
+}
+
+#birth-submit div input {
+  border: 1px solid hsl(0, 0%, 86%);
+  font-size: 1.8rem;
+  border-radius: 3px;
+  font-family: inherit;
+  padding: 0.6rem;
+  width: 12rem;
+  transition: border 0.3s;
+}
+
+#birth-submit div input:hover {
+  border-color: hsl(0, 1%, 44%);
+}
+
+#birth-submit div input:focus {
+  outline: none;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+
+  .birthday-form {
+    justify-content: center;
+  }
+
+  .age-counter {
+    max-width: 50rem;
+  }
+
+  .divider {
+    margin-top: 6rem;
+  }
+
+  .submit--btn {
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  .result-box {
+    font-size: 5.6rem;
+  }
+
+  .birthday-form {
+    gap: 3.4rem;
+  }
+
+  #birth-submit div label {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .birthday-form {
+    gap: 1.7rem;
+    flex-direction: column;
+  }
+
+  #birth-submit div {
+    width: 100%;
+  }
+
+  #birth-submit div input {
+    width: 100%;
+  }
+
+  .age-counter {
+    margin: auto 2rem;
+  }
+}
+
+/* .error div input {
+  border-color: hsl(0, 100%, 67%);
+}
+
+.error div label {
+  color: hsl(0, 100%, 67%);
+}
+
+.error div::after {
+  content: "This field is required";
+}
+
+.error {
+  border-color: hsl(0, 100%, 67%) !important;
+}
+
+.error::after {
+  content: "This field is required" !important;
+  position: absolute;
+  bottom: 10px;
+} */

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="age-counter">
+        <form class="birthday-form" action="#" id="birth-submit">
+          <div>
+            <label for="day">Day</label>
+            <input
+              id="day"
+              type="number"
+              placeholder="DD"
+              maxlength="2"
+              min="0"
+              max="31"
+              required
+            />
+          </div>
+          <div>
+            <label for="month">Month</label>
+
+            <input
+              id="month"
+              type="number"
+              placeholder="MM"
+              maxlength="2"
+              min="0"
+              max="12"
+              required
+            />
+          </div>
+          <div>
+            <label for="year">Year</label>
+            <input
+              id="year"
+              type="number"
+              placeholder="YYYY"
+              minlength="4"
+              min="0"
+              required
+            />
+          </div>
+        </form>
+        <div class="divider">
+          <button class="submit--btn" form="birth-submit">
+            <img src="assets/images/icon-arrow.svg" />
+          </button>
+        </div>
+        <div class="result-box">
+          <p><span class="result result--years">--</span>years</p>
+          <p><span class="result result--months">--</span>months</p>
+          <p><span class="result result--days">--</span>days</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
